@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pappu will you</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 100px;
+            transition: background 0.5s ease;
+            background-color: powderblue;
+
+        }
+        .container {
+            padding: 20px;
+            border: 2px solid black;
+            display: inline-block;
+            background: pink;
+            border-radius: 10px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .yes-btn {
+            background-color: green ;
+            color: powderblue;
+        }
+        .no-btn {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>💖Will you propose ME in night?✨😍</h2>
+        <button class="yes-btn" onclick="clickYes()">Yes ❤</button>
+        <button class="no-btn" onclick="clickNo()">Podi 😂</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function clickYes() {
+            document.getElementById("message").innerText = "Yes, babe!🥰🤩💞";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function clickNo() {
+            document.getElementById("message").innerText = "You have to click yes only Pappu!😛😋";
+            document.body.style.backgroundColor = "powderblue";
+        }
+    </script>
+
+</body>
+</html>
